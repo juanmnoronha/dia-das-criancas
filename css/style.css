@@ -1,0 +1,277 @@
+/* ==========================================================================
+   @imports
+   ========================================================================== */
+
+@import url('libs/reset.css');
+@import url('libs/oocss.css');
+@import url('animation.css');
+
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+   
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+html { font-size: 100%; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
+body { font-family: Arial, Helvetica, sans-serif; }
+
+/* ==========================================================================
+   Dia das Crianças
+   ========================================================================== */
+
+#bp_dia_das_criancas { background: url(../img/bg-home.jpg) no-repeat center top; background-size: 100% 642px; height: 642px; overflow: hidden; position: relative; }
+#bp_dia_das_criancas section { height: 642px; position: relative; top: 0; }
+
+/* ==========================================================================
+   Common classes
+   ========================================================================== */
+
+.windows { background: url(../img/windows.png) no-repeat center 167px; height: 642px; position: absolute; width: 100%; }
+.group { height: 642px; margin: 0 auto; position: relative; max-width: 940px; }
+.logo, .button { cursor: pointer; display: block; position: absolute; text-indent: -9999px; }
+.logo { left: 50%; }
+.board { position: absolute; }
+.wire { background: url(../img/wire.png) no-repeat center bottom; display: block; }
+.mini .wire { background: url(../img/miniWire.png) no-repeat center bottom; }
+
+.board { height: 642px; top: -50px; }
+.board .wire { height: 300px; }
+.board .button { clear: both; position: relative; }
+
+.board.mini { height: 145px; top: -50px; }
+.board.mini .wire { height: 24px; }
+.board.mini .button { clear: both; position: relative; }
+
+.girl.mini .button { background: url(../img/miniButtonGirl.png) no-repeat center top; }
+.girl.mini .button:hover { background: url(../img/miniButtonGirlHover.png) no-repeat center top; }
+.boy.mini .button { background: url(../img/miniButtonBoy.png) no-repeat center top; }
+.boy.mini .button:hover { background: url(../img/miniButtonBoyHover.png) no-repeat center top; }
+
+.three.mini .button { background: url(../img/miniThree.png) no-repeat center top; }
+.three.mini .button:hover { background: url(../img/miniThreeHover.png) no-repeat center top; }
+
+.five.mini .button { background: url(../img/miniFive.png) no-repeat center top; }
+.five.mini .button:hover { background: url(../img/miniFiveHover.png) no-repeat center top; }
+
+.ten.mini .button { background: url(../img/miniTen.png) no-repeat center top; }
+.ten.mini .button:hover { background: url(../img/miniTenHover.png) no-repeat center top; }
+
+.twelve.mini .button { background: url(../img/miniTwelve.png) no-repeat center top; }
+.twelve.mini .button:hover { background: url(../img/miniTwelveHover.png) no-repeat center top; }
+
+#bp_dia_das_criancas .noUiSlider * { cursor: move; }
+#bp_dia_das_criancas .noUiSlider { background: #e5e5e5; border: none; box-shadow: none; }
+#bp_dia_das_criancas .noUiSlider.horizontal { height: 12px; width: 186px; }
+#bp_dia_das_criancas .noUiSlider div { border: none; }
+
+.item { position: absolute; }
+.carpet { background: url(../img/carpet.png) no-repeat center top; height: 92px; left: -9px; top: 540px; width: 944px; }
+.book { background: url(../img/book.png) no-repeat center top; height: 72px; left: -100px; top: 540px; width: 145px; }
+.teddy { background: url(../img/teddy.png) no-repeat center top; height: 173px; left: 4px; top: 406px; width: 141px; }
+.toy { background: url(../img/toy.png) no-repeat center top; height: 33px; left: 45px; top: 571px; width: 109px; }
+.girl-playing { background: url(../img/girl.png) no-repeat center top; height: 390px; left: 129px; top: 212px; width: 221px; z-index: 1; }
+.doll { background: url(../img/doll.png) no-repeat center top; height: 88px; left: 292px; top: 496px; width: 58px; z-index: 1; }
+.bed { background: url(../img/bed.png) no-repeat center top; height: 343px; left: 265px; top: 237px; width: 419px; }
+.game-board { background: url(../img/game-board.png) no-repeat center top; height: 66px; left: 269px; top: 554px; width: 389px; }
+.dices { background: url(../img/throw-dices.png) no-repeat center top; height: 96px; left: 488px; top: 493px; width: 183px; }
+.car { background: url(../img/toy-car.png) no-repeat center top; height: 40px; left: 628px; top: 559px; width: 62px; }
+.nightstand { background: url(../img/nightstand.png) no-repeat center top; height: 278px; left: 776px; top: 277px; width: 127px; }
+.ball { background: url(../img/ball.png) no-repeat center top; height: 89px; left: 852px; top: 530px; width: 90px; }
+.table { width: 584px; z-index: 1; }
+
+/* ==========================================================================
+   Sprites
+   ========================================================================== */
+
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+#home { font-family: Arial, Helvetica, sans-serif; height: 642px; }
+
+#home .logo, #home .button { left: 50%; position: absolute; }
+#home .logo { background: url(../img/logo.png) no-repeat center top; height: 445px; margin-left: -342px; top: -49px; width: 684px; text-indent: -9999px; }
+
+#home .button { background: url(../img/btn-acesse-o-site.png) no-repeat center top; height: 119px; left: 50%; margin-left: -182px; top: 363px; width: 364px; }
+#home .button:active { background: url(../img/btn-acesse-o-site-hover.png) no-repeat center top; }
+
+/* ==========================================================================
+   Gender
+   ========================================================================== */
+
+/*#gender, #age { display: none; }*/
+
+#gender .logo { background: url(../img/logo-small.png) no-repeat center top; height: 379px; margin-left: -223px; top: -134px;width: 446px; z-index: 3; }
+
+#gender .board { width: 68px; z-index: 2; }
+#gender .board .wire { margin-left: 3px; width: 68px; }
+#gender .board .button { clear: both; height: 72px; margin: -4px 0 auto; width: 68px; z-index: 2; }
+
+#gender .girl { left: 398px; }
+#gender .girl .button { background: url(../img/buttonGirl.png) no-repeat center top; }
+#gender .girl .button:hover { background: url(../img/buttonGirlHover.png) no-repeat center top; }
+#gender .boy { right: 404px; }
+#gender .boy .button { background: url(../img/buttonBoy.png) no-repeat center top; }
+#gender .boy .button:hover { background: url(../img/buttonBoyHover.png) no-repeat center top; }
+
+#gender .title { left: 408px; position: absolute; top: 314px; }
+
+#gender .boy-playing { background: url(../img/boy.png) no-repeat center top; height: 371px; left: 572px; top: 226px; width: 243px; z-index: 1; }
+
+
+/* ==========================================================================
+   Age
+   ========================================================================== */
+
+#age .logo { background: url(../img/logo-small-xx.png) no-repeat center top; height: 275px; left: auto; right: 34px; top: -104px; width: 318px; z-index: 2; }
+#age .title { left: 393px; position: absolute; top: 177px; z-index: 1; }
+
+#age .board.mini { top: -50px; width: 49px; z-index: 3; }
+#age .board.mini .wire { height: 74px; margin-left: 2px; width: 49px; }
+#age .board.mini .button { clear: both; height: 72px; margin: -3px 0 auto; width: 49px; z-index: 2; }
+
+#age .girl.mini { left: 391px; }
+#age .boy.mini { left: 431px; }
+
+#age .board { left: 600px; top: -160px; width: 82px; }
+#age .board .wire { height: 420px; margin-left: 5px; width: 82px; }
+#age .board .button { height: 86px; margin: -4px 0 auto; width: 82px; }
+
+#age .three { left: 393px; z-index: 1; }
+#age .three .button { background: url(../img/three.png) no-repeat center top; }
+#age .three .button:hover { background: url(../img/threeHover.png) no-repeat center top; }
+
+#age .five { left: 493px; z-index: 1; }
+#age .five .button { background: url(../img/five.png) no-repeat center top; }
+#age .five .button:hover { background: url(../img/fiveHover.png) no-repeat center top; }
+
+#age .ten { left: 443px; top: -90px; z-index: 2; }
+#age .ten .button { background: url(../img/ten.png) no-repeat center top; }
+#age .ten .button:hover { background: url(../img/tenHover.png) no-repeat center top; }
+
+#age .twelve { left: 543px; top: -90px; z-index: 2; }
+#age .twelve .button { background: url(../img/twelve.png) no-repeat center top; }
+#age .twelve .button:hover { background: url(../img/twelveHover.png) no-repeat center top; }
+
+#age .girl-thinking { background: url(../img/girl-thinking.png) no-repeat left top; height: 634px; left: 18px; top: 50px; width: 360px; z-index: 1; }
+#age .boy-thinking { background: url(../img/boy-thinking.png) no-repeat left top; height: 666px; left: 10px; top: 51px; width: 359px; z-index: 1; }
+#age .table { background: url(../img/table-1.png) no-repeat center top; height: 420px; left: 372px; top: 340px; }
+
+/* ==========================================================================
+   Price
+   ========================================================================== */
+
+#price .logo { background: url(../img/logo-small-xx.png) no-repeat center top; height: 275px; left: auto; right: 34px; top: -104px; width: 318px; z-index: 2; }
+
+#price .title { left: 425px; position: absolute; top: 177px; z-index: 1; }
+
+#price .board.mini { top: -50px; width: 49px; z-index: 6; }
+#price .board.mini .wire { height: 74px; margin-left: 2px; width: 49px; }
+#price .board.mini .button { clear: both; height: 72px; margin: -3px 0 auto; width: 49px; z-index: 2; }
+
+#price .board.board-number { top: -10px; z-index: 5; }
+#price .board.board-number .wire { height: 110px; }
+
+#price .girl.mini { left: 417px; }
+#price .boy.mini { left: 457px; }
+
+#price .three.mini { left: 417px; }
+#price .five.mini { left: 457px; }
+#price .ten.mini { left: 497px; }
+#price .twelve.mini { left: 537px; }
+
+#price .min, #price .max { height: 364px; }
+#price .min { left: 379px; z-index: 4; }
+#price .min .wire { height: 290px; }
+
+#price .max { left: 442px; z-index: 3; }
+#price .max .wire { height: 378px; }
+
+#price .board .wire-price { background: url(../img/wire-price.png) no-repeat center bottom; }
+#price .board .price { background: url(../img/bg-price-range.png) no-repeat center top; clear: both; height: 56px; margin: -4px 0 auto; padding: 21px 20px 0; width: 362px; z-index: 2; }
+
+#price .noUiSlider div { background: url(../img/button-price.png) no-repeat center top; height: 26px; margin: -9px 0 0 -9px; width: 26px; }
+
+#price .girl-happy { background: url(../img/girl-happy.png) no-repeat left top; height: 636px; left: 46px; top: 43px; width: 317px; z-index: 1; }
+#price .boy-happy { background: url(../img/boy-happy.png) no-repeat left top; height: 658px; left: 9px; top: 47px; width: 407px; z-index: 1; }
+#price .table { background: url(../img/table-2.png) no-repeat center top; height: 425px; left: 371px; top: 335px; }
+#price .from, #price .range, #price .value { float: left; }
+#price .from, #price .value { font-size: 20px; font-weight: bold; margin-top: -7px; }
+#price .from { color: #999; margin-right: 15px; }
+#price .range { margin-right: 18px; }
+#price .value { color: #f35858; }
+
+#price .ok { background: url(../img/btn-ok.png) no-repeat center top; height: 77px; right: 0; top: 324px; width: 92px; z-index: 2; }
+#price .ok:active { background: url(../img/btn-ok-hover.png) no-repeat center top; height: 77px; width: 92px; }
+
+/* ==========================================================================
+   Offers
+   ========================================================================== */
+
+#offers .group { max-width: 1000px; }
+
+#offers .logo { background: url(../img/logo-small-xx.png) no-repeat center top; height: 275px; left: auto; right: 34px; top: -104px; width: 318px; z-index: 2; }
+#offers .title { left: 56px; position: absolute; top: 82px; z-index: 6; }
+
+#offers .board.mini { top: -50px; width: 49px; z-index: 3; }
+#offers .board.mini .wire { height: 74px; margin-left: 2px; width: 49px; }
+#offers .board.mini .button { clear: both; height: 72px; margin: -3px 0 auto; width: 49px; z-index: 2; }
+
+#offers .girl.mini { left: 156px; }
+#offers .boy.mini { left: 196px; }
+
+#offers .three.mini { left: 351px; }
+#offers .five.mini { left: 391px; }
+#offers .ten.mini { left: 431px; }
+#offers .twelve.mini { left: 471px; }
+
+#offers .min.mini, #offers .max.mini { height: 316px; top: ; width: 268px; }
+#offers .min.mini .wire-price, #offers .max.mini .wire-price { height: 180px; }
+
+#offers .min.mini { left: 56px; z-index: 4; }
+#offers .max.mini { left: 316px; z-index: 3; }
+
+#offers .board.mini .wire-price { background: url(../img/miniWire-price.png) no-repeat center bottom; width: 268px; }
+#offers .board.mini .price { background: url(../img/bg-mini-price-range.png) no-repeat center top; clear: both; height: 41px; margin: -2px 0 auto; padding: 14px 20px 0; width: 228px; z-index: 6; }
+
+#offers .noUiSlider.horizontal { height: 8px; width: 100px; }
+#offers .noUiSlider div { background: url(../img/button-mini-price.png) no-repeat center top; height: 18px; margin: -6px 0 0 -9px; width: 18px; }
+
+#offers .from, #offers .to, #offers .range, #offers .value { float: left; }
+#offers .from, #offers .to, #offers .value { font-size: 15px; font-weight: bold; margin-top: -5px; }
+#offers .from, #offers .to { color: #999; margin-right: 12px; }
+#offers .range { margin-right: 13px; }
+#offers .value { color: #f35858; }
+
+#offers .ok { background: url(../img/btn-mini-ok.png) no-repeat center top; height: 55px; left: 578px; top: 128px; width: 67px; z-index: 6; }
+#offers .ok:active { background: url(../img/btn-mini-ok-hover.png) no-repeat center top; }
+
+#offers .item { position: relative; }
+#offers .item.mini { position: absolute; }
+
+#offers .grid { margin: 0 auto; overflow: hidden; width: 884px; }
+
+#offers .wire { height: 210px; }
+
+#offers .grid .offer { background: url(../img/bg-offer.png) no-repeat center top; display: block; height: 322px; padding: 26px 0 36px; text-decoration: none; width: 221px; }
+#offers .grid .offer .picture { display: block; margin: 0 auto 20px; }
+#offers .grid .offer .description { color: #6b311e; display: table-cell; font: bold 14px Verdana, Geneva, Tahoma, sans-serif; height: 45px; margin: 0 auto 12px; padding: 0 30px; text-align: center; vertical-align: middle;  width: 171px; }
+#offers .grid .offer .price { border-top: 1px dashed #6b311e; color: #6b311e; display: block; font: bold 20px Verdana, Geneva, Tahoma, sans-serif; margin: 0 auto 12px; padding-top: 4px; text-align: center; width: 170px; }
+#offers .grid .offer .button { background: url(../img/btn-compare-precos.png) no-repeat center top; border: none; display: block; height: 46px; margin: 0 auto; width: 172px; }
+#offers .grid .offer .button:active { background: url(../img/btn-compare-precos-hover.png) no-repeat center top; }
+
+#offers .arrow { position: absolute; }
+#offers .arrow .wire { height: 409px; margin-left: 5px; }
+#offers .arrow .button { display: block; height: 59px; margin-top: -2px; width: 58px; }
+#offers .prev { left: 2px; }
+#offers .next { right: 2px; }
+#offers .prev .button { background: url(../img/btn-arrow-prev.png) no-repeat left top; }
+#offers .next .button { background: url(../img/btn-arrow-next.png) no-repeat left top; }
+
+/*.table { background: url(../img/table-2.png) no-repeat center top; height: 425px; }*/

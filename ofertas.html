@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dia das Crianças</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="js/libs/nouislider.fox.css">
+
+        <script>var prices = [];</script>
+
+    </head>
+    <body>
+
+        <section id="bp_dia_das_criancas">
+            <div class="windows"></div>
+
+            <section id="offers">
+                <div class="group">
+                    <h1 class="logo">Dia das Crianças</h1>
+
+                    <div class="board mini girl slideDown">
+                        <span class="wire"></span>
+                        <a href="#girl" class="button">Menina</a>
+                    </div>
+                    <div class="board mini boy slideDown">
+                        <span class="wire"></span>
+                        <a href="#boy" class="button">Menino</a>
+                    </div>
+                    <div class="board mini board-number three slideDown">
+                        <span class="wire"></span>
+                        <a href="#three" class="button">3 anos</a>
+                    </div>
+                    <div class="board mini board-number five slideDown">
+                        <span class="wire"></span>
+                        <a href="#five" class="button">5 anos</a>
+                    </div>
+                    <div class="board mini board-number ten slideDown">
+                        <span class="wire"></span>
+                        <a href="#ten" class="button">10 anos</a>
+                    </div>
+                    <div class="board mini board-number twelve slideDown">
+                        <span class="wire"></span>
+                        <a href="#twelve" class="button">12 anos</a>
+                    </div>
+
+                    <h2 class="title fadeIn">
+                        <img src="img/aproveite-nossas-ofertas.png" alt="Aproveite nossas ofertas!">
+                    </h2>
+
+                    <form id="price-form">
+
+                        <div class="board mini min item slideDown">
+                            <span class="wire wire-price"></span>
+                            <div class="price">
+                                <div class="from">De:</div>
+                                <div class="range">
+                                    <div class="noUiSlider"></div>
+                                </div>
+                                <div class="value">R$ <span class="number">0,00</span></div>
+                                <script>
+                                    prices.push({
+                                        range: [0, 100]
+                                       ,start: 0
+                                       ,step: 50
+                                       ,handles: 1
+                                       ,slide: function(){
+                                          var values = $(this).val();
+                                          $(".min .number").text(values + ',00');
+                                        }
+                                    });  
+                                </script>
+                            </div>
+                        </div>
+
+                        <div class="board mini max item slideDown">
+                            <span class="wire wire-price"></span>
+                            <div class="price">
+                                <div class="from">De:</div>
+                                <div class="range">
+                                    <div class="noUiSlider"></div>
+                                </div>
+                                <div class="value">R$ <span class="number">100,00</span></div>
+                                <script>
+                                    prices.push({
+                                        range: [100, 500]
+                                       ,start: 100
+                                       ,step: 100
+                                       ,handles: 1
+                                       ,slide: function(){
+                                          var values = $(this).val();
+                                          $(".max .number").text(values + ',00');
+                                        }
+                                    });  
+                                </script>
+                            </div>
+                        </div>
+
+                        <a href="#" class="ok button">Ok</a>
+
+                    </form>
+
+                    <div class="board arrow prev slideDown">
+                        <span class="wire"></span>
+                        <a id="prev" href="#" class="button">Anterior</a>
+                    </div>
+
+                    <div class="grid carousel" data-cycle-fx="carousel" data-cycle-slides="div" data-cycle-timeout="0" data-cycle-next="#next" data-cycle-prev="#prev" data-cycle-manual-speed="300" data-cycle-carousel-visible="4" data-allow-wrap="false">
+                        <div class="board item product">
+                            <span class="wire"></span>
+                            <a class="offer" href="#">
+                                <img class="picture" src="img/product.png" alt="">
+                                <span class="description">Candide Fênix</span>
+                                <span class="price">R$ 189,99</span>
+                                <button class="button">Ir à loja</button>
+                            </a>
+                        </div>
+                        <div class="board item product">
+                            <span class="wire"></span>
+                            <a class="offer" href="#">
+                                <img class="picture" src="img/product.png" alt="">
+                                <span class="description">Candide Fênix</span>
+                                <span class="price">R$ 189,99</span>
+                                <button class="button">Ir à loja</button>
+                            </a>
+                        </div>
+                        <div class="board item product">
+                            <span class="wire"></span>
+                            <a class="offer" href="#">
+                                <img class="picture" src="img/product.png" alt="">
+                                <span class="description">SamsungCandide Fênix</span>
+                                <span class="price">R$ 189,99</span>
+                                <button class="button">Ir à loja</button>
+                            </a>
+                        </div>
+                        <div class="board item product">
+                            <span class="wire"></span>
+                            <a class="offer" href="#">
+                                <img class="picture" src="img/product.png" alt="">
+                                <span class="description">Candide Fênix</span>
+                                <span class="price">R$ 189,99</span>
+                                <button class="button">Ir à loja</button>
+                            </a>
+                        </div>
+                        <div class="board item product">
+                            <span class="wire"></span>
+                            <a class="offer" href="#">
+                                <img class="picture" src="img/product.png" alt="">
+                                <span class="description">Candide Fênix</span>
+                                <span class="price">R$ 189,99</span>
+                                <button class="button">Ir à loja</button>
+                            </a>
+                        </div>
+                        <div class="board item product">
+                            <span class="wire"></span>
+                            <a class="offer" href="#">
+                                <img class="picture" src="img/product.png" alt="">
+                                <span class="description">Candide Fênix</span>
+                                <span class="price">R$ 189,99</span>
+                                <button class="button">Ir à loja</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="board arrow next slideDown">
+                        <span class="wire"></span>
+                        <a id="next" href="#" class="button">Próximo</a>
+                    </div>
+
+                    <div class="carpet item blur"></div>
+                    <div class="book item blur"></div>
+                    <div class="teddy item blur"></div>
+                    <div class="toy item blur"></div>
+                    <div class="doll item blur"></div>
+                    <div class="bed item blur"></div>
+                    <div class="game-board item blur"></div>
+                    <div class="dices item blur"></div>
+                    <div class="car item blur"></div>
+                    <div class="nightstand item blur"></div>
+                    <div class="ball item blur"></div>
+                    
+                </div>
+            </section>
+
+        </section>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="js/libs/jquery.cycle2.min.js"></script>
+        <script src="js/libs/jquery.cycle2.carousel.js"></script>
+        <script>
+            $.fn.cycle.defaults.autoSelector = '.carousel';
+        </script>
+
+        <script src="js/libs/jquery.nouislider.min.js"></script>
+        <script>
+            $('.noUiSlider').each(function(i){
+                $(this).noUiSlider(prices[i]);
+            });
+
+            $(".min").find('input').addClass('inputMin');
+            $(".max").find('input').addClass('inputMax');
+
+            $('a').click(function() {
+                var precomin = $('.inputMin').val();
+                var precomax = $('.inputMax').val();
+                location.href = '&' + 'precomin='+ precomin + '&' + precomax + 'precomax='+ precomax;
+                //alert('&precomin='+ precomin + '&precomax='+ precomax);
+                return false;
+            });
+                              
+        </script>
+
+        <script>
+            var text_to_append = "test";
+            $('form').submit(function(obj) {
+                obj.preventDefault();
+                $("input[name='q']").val($("input[name='q']").val() + text_to_append);
+                this.submit();
+            });
+        </script>
+
+
+    </body>
+</html>
